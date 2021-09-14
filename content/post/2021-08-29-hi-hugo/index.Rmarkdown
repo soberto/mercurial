@@ -1,0 +1,46 @@
+---
+title: Hi Hugo
+author: soberto
+date: '2021-08-29'
+slug: hi-hugo
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-08-29T20:16:38-03:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+```{r}
+summary(Orange)
+```
+
+```{r echo=FALSE}
+## ESTA ES LA FORMA QUE YO TENGO QUE PONER LE CÓDIGO, PARA QUE NO LO VEA NADIE
+library(ggplot2) 
+oplot <- ggplot(Orange, aes(x = age, 
+                   y = circumference, 
+                   colour = Tree)) +
+  geom_point() +
+  geom_line() +
+  guides(colour = FALSE) +
+  theme_bw()
+oplot
+```
+##### PUTO EL QUE LEEEEE
+```{r}
+library(ggplot2)
+ggplot(Orange, aes(x = age, 
+                   y = circumference, 
+                   color = Tree)) +
+  geom_point() +
+  geom_line() +
+  guides(color = FALSE) +
+  theme_bw()
+```
